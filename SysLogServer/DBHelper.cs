@@ -7,7 +7,7 @@ namespace SysLogServer
     {
         public void SysLogKaydet(string strAciklama)
         {
-            //TODO: Exception handle...
+            //TODO: Exception handle
             using (postgresContext db = new postgresContext())
             {
                 SysLog s = new SysLog();
