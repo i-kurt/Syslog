@@ -68,6 +68,7 @@ namespace SysLogServer
             }
             catch (Exception ex)
             {
+                // TODO: Write exception to a log file.
                 Console.WriteLine(ex.Message);
             }
         }
