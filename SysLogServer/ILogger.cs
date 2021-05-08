@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SysLogServer
 {
+    /// <summary>
+    /// Logger interface
+    /// </summary>
     public interface ILogger
     {
         public Task startService();
