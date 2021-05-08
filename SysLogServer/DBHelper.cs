@@ -15,6 +15,7 @@ namespace SysLogServer
                 s.Tarih = new DateTime[] { DateTime.Now };
                 db.SysLogs.Add(s);
                 db.SaveChanges();
+                //...
             }
         }
     }
