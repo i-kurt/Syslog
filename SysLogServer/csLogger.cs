@@ -36,6 +36,7 @@ namespace SysLogServer
                      }
                      catch (Exception exlog)
                      {
+                         //TODO: Write exception to a log file.
                          if (!exlog.Message.Contains("Cannot access a disposed object"))
                              Console.WriteLine(exlog.Message);
                      }
