@@ -37,7 +37,8 @@ namespace SysLogServer
                      catch (Exception exlog)
                      {
                          if (!exlog.Message.Contains("Cannot access a disposed object"))
-                             Console.WriteLine(exlog.Message);
+                             if (Environment.UserInteractive)
+                                 Console.WriteLine(exlog.Message);
                      }
                  }
              }));
