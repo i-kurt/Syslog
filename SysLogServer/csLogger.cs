@@ -49,21 +49,14 @@ namespace SysLogServer
             {
                 string strMsg = Encoding.UTF8.GetString(baLog);
 
-                if (Environment.UserInteractive)
-                {
-                    Console.WriteLine(strMsg);
-                }
-
                 if (strMsg.ToLowerInvariant().Contains("sending discover..."))
                 {
                     return;
                 }
-                else
+
+                if (Environment.UserInteractive)
                 {
-                    if (Environment.UserInteractive)
-                    {
-                        Console.WriteLine(strMsg);
-                    }
+                    Console.WriteLine(strMsg);
                 }
 
                 lock (objLock)
