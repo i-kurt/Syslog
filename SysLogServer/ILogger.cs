@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SysLogServer
 {
     /// <summary>
-    /// Logger interface
+    /// Logger interface.
     /// </summary>
     public interface ILogger
     {
