@@ -11,7 +11,7 @@ namespace Syslog
         {
             try
             {
-                string strLogFile = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "log.txt");
+                string strLogFile = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "log.txt"); 
                 FileInfo fi = new FileInfo(strLogFile);
                 if (fi.Length > 1024 * 1024 * 10)
                 {
